@@ -1,0 +1,15 @@
+
+names=["Hunain","Zohair","Ali Hussain","Hassan"]
+target=input("Enter name to be found ")
+target=target[0].Upper()
+found=False
+index=0
+while found!=True and index<len(names):
+    if names[index]==target:
+      found=True
+    else:
+      index=index+1
+if found==True:
+  print("Name found at",index)
+else:
+  print("Name not found")
